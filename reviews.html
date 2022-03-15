@@ -27,12 +27,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@400;700&display=swap');
         </style>
+         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <style>
            body {
             background-color: rgb(87, 87, 87);
         }
        .card {
-        background: radial-gradient(circle, rgba(174,174,176,1) 0%, rgba(80,81,87,1) 100%);
+        background: radial-gradient(circle, rgba(216,216,221,1) 0%, rgba(125,126,131,1) 100%);
       }
       .card-img-top {
                 height: 300px;
@@ -55,6 +57,10 @@
           display: flex;
           align-self: center;
       }
+      .play {
+  display: flex;
+  justify-content: center;
+}
     </style>
   </head>
   <body>
@@ -89,10 +95,18 @@
             -->
     <div class="jumbotron">
       <h1 class="display-4">Reviews</h1>
-      <p class="lead">
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
-      </p>
+      <div class="container">
+        <div class="row my-3">
+            <div class="col-12 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdns-images.dzcdn.net/images/cover/85320a647126529820c2cbdf71ad63e9/264x264.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="title">MILGRAM</h5>
+                        <p class="artist">Multiple Artists</p>
+                        <p class="duration">38:21</p>
+                    </div>
+                </div>
+            </div>
       <hr class="my-4" />
       <p>
        Please submit your rating of the selected song.
