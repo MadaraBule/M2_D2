@@ -24,19 +24,25 @@
       integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
-
     <style>
-      .card {
-        background-color: gray;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@400;700&display=swap');
+        </style>
+    <style>
+           body {
+            background-color: rgb(87, 87, 87);
+        }
+       .card {
+        background: radial-gradient(circle, rgba(174,174,176,1) 0%, rgba(80,81,87,1) 100%);
       }
-      .cover {
-        height: 150px;
-        width: 150px;
-      }
+      .card-img-top {
+                height: 300px;
+                width: 100%;
+            }
       .title {
         font: large bold black;
       }
       .artist {
+        font-family: 'Roboto', sans-serif;
         font: italic bold gray;
       }
       .genre {
@@ -45,9 +51,31 @@
       .duration {
         font: 100 italic gray;
       }
+      .rating {
+          display: flex;
+          align-self: center;
+      }
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="fav.html">Favourites <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="reviews.html">Reviews <span class="sr-only">(current)</span></a>
+              </li>
+      </nav>
     <!-- EXERCISE 4
                 Create a section for the album reviews.
                 Pick one of your favourite albums, and create a section with:
@@ -67,11 +95,19 @@
       </p>
       <hr class="my-4" />
       <p>
-        It uses utility classes for typography and spacing to space content out
-        within the larger container.
+       Please submit your rating of the selected song.
       </p>
-      <textarea name="review" id="" cols="mr-auto" rows="mr-auto"></textarea>
+      <div class="rating">
+      <form>
+        <fieldset id="group1">
+          <input type="radio" value="value1" name="group1">1<br>
+          <input type="radio" value="value2" name="group1">2<br>
+          <input type="radio" value="value2" name="group1">3<br>
+          <input type="radio" value="value2" name="group1">4<br>
+          <input type="radio" value="value2" name="group1">5<br>
+        </fieldset>
       <a class="btn btn-primary btn-lg" role="button">Submit</a>
+    </div>
     </div>
   </body>
 </html>

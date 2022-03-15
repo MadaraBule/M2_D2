@@ -6,6 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@400;700&display=swap');
+        </style>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -26,15 +29,16 @@
     ></script>
 
     <style>
-      .card {
-        background-color: gray;
-      }
-      .cover {
-        height: 150px;
-        width: 150px;
-      }
+        body {
+            background-color: rgb(87, 87, 87);
+        }
+    .card-img-top {
+                height: 300px;
+                width: 100%;
+            }
       .title {
         font: large bold black;
+        font-family: 'Roboto', sans-serif;
       }
       .artist {
         font: italic bold gray;
@@ -45,9 +49,30 @@
       .duration {
         font: 100 italic gray;
       }
+      .card {
+        background: radial-gradient(circle, rgba(174,174,176,1) 0%, rgba(80,81,87,1) 100%);
+      }
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="fav.html">Favourites <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="reviews.html">Reviews <span class="sr-only">(current)</span></a>
+              </li>
+      </nav>
     <!-- EXERCISE 3
                 Create a responsive section for your favourite albums.
                 In this section you should have:
@@ -55,5 +80,90 @@
                 - 3 albums per row when you are on a tablet (or a smaller viewport)
                 - 2 albums per row when you are on a small screen
             -->
+            <div class="container">
+                <div class="row my-3">
+                    <div class="col-12 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdns-images.dzcdn.net/images/cover/85320a647126529820c2cbdf71ad63e9/264x264.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="title">MILGRAM</h5>
+                                <p class="artist">Multiple Artists</p>
+                                <p class="duration">38:21</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://m.media-amazon.com/images/I/713RIAh52RS._SS500_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="title">ずっと生きてね</h5>
+                                <p class="artist">Takayan</p>
+                                <p class="duration">31:24</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://nbcuni-music.com/deco27/lib/img/jkt_syokai.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="title">MANNEQUIN</h5>
+                                <p class="artist">DECO*27</p>
+                            <p class="duration">31:24</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://livejapanmusic.com/wp-content/uploads/2020/02/amz_artistphoto_2020s-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="title">BOYCOTT</h5>
+                                <p class="artist">Amazarashi</p>
+                                <p class="duration">01:12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row my-3">
+                            <div class="col-12 col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://fc.milet.jp/files/4/n114/eyes/img/main.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="title">eyes</h5>
+                                        <p class="artist">milet</p>
+                                        <p class="duration">01:09:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://deadgrandmablog.files.wordpress.com/2020/07/anima-album-cover.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="title">anima</h5>
+                                        <p class="artist">Daoko</p>
+                                        <p class="duration">44:43</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/8e/06/c7/13043342/1545-1/tsp20201119131129/Kaikai-Kitan-Ao-No-Waltz.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="title">Kaikai Kitan / Ao No Waltz</h5>
+                                        <p class="artist">Eve</p>
+                                        <p class="duration">28:48</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://res.cloudinary.com/dq82ikfq4/image/upload/c_crop,h_600,w_600,x_0,y_0/c_pad,dpr_2,f_auto,h_300,w_400/muzryzzcjpziyqbpj2il.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="title">STRAY SHEEP</h5>
+                                        <p class="artist">Kenshi Yonezu</p>
+                                        <p class="duration">59:33</p>
+                                    </div>
+                                </div>
+                            </div>
+    </div>
   </body>
 </html>
