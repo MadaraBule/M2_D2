@@ -94,6 +94,17 @@
                 font-size: 48px;
                 color: beige;
             }
+            .rounded-sm {
+                display: flex;
+                justify-content: center;
+                height:200px;
+                width: 200px;
+            }
+            .col {
+                border: 5px;
+                border-color: bisque;
+                border-style: dotted;
+            }
           /* EXERCISE 1
                 For every Album displayed in the page we'd like to have a consistent appearence.
                 Create the template of an Album component (you can start from a bootstrap one or create your own)
@@ -382,14 +393,33 @@
                 This section is dedicated to him / her / them!
                 Feel free to experiment in this part of the page.
             -->
-            
-
+            <div class="favContainer">
+                <div class="row">
+                  <div class="col">
+                    <img src="https://i.ytimg.com/vi/5asf_v-9gLo/maxresdefault.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col">
+                    <h5>DECO*27</h5>
+                    <p>DECO*27 (デコ・ニーナ Deko Niina, born December 16, 1986) is a Fukuoka-born VOCALOID song producer and utaite. His first work got over 100,000 view counts quite suddenly, and his current popularity is stable. His style has been described as a fusion of rock and pop.</p>
+                  </div>
+                </div>
         <!-- EXERCISE 7
                 Just covers!
                 Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
                 Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
             -->
-
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">TAPESTRY</p>
+              </blockquote>
+            <div class="tapestry">
+                <div>
+            <img src="https://cdns-images.dzcdn.net/images/cover/85320a647126529820c2cbdf71ad63e9/264x264.jpg" class="rounded-sm" alt="...">
+            <img src="https://m.media-amazon.com/images/I/713RIAh52RS._SS500_.jpg" class="rounded-sm" alt="...">
+            <img src="https://nbcuni-music.com/deco27/lib/img/jkt_syokai.png" class="rounded-sm" alt="...">
+            <img src="https://livejapanmusic.com/wp-content/uploads/2020/02/amz_artistphoto_2020s-1.jpg" class="rounded-sm" alt="...">
+            <img src="https://fc.milet.jp/files/4/n114/eyes/img/main.jpg" class="rounded-sm" alt="...">
+        </div>
+        </div>
         <!-- EXERCISE 8
                 Implement a footer with some information / social links.
             -->
