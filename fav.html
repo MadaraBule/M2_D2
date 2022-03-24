@@ -69,17 +69,22 @@ background: linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 10
   width: min-content;
   padding: 7px;
 }
+.list-box{
+width: 100%;
+}
 .time-row {
- width: 10px;
+ width: 15%;
  background: linear-gradient(0deg, rgb(61, 61, 61) 0%, rgb(146, 146, 146) 100%);
 }
 .upper-row {
+  width: 70%;
   background: linear-gradient(0deg, rgb(61, 61, 61) 0%, rgb(146, 146, 146) 100%);
 }
+.empty-cell {
+  padding: 0px;
+}
 .delete {
-  position: absolute;
-  width: min-content;
-
+  object-fit: fill;
 }
     </style>
   </head>
@@ -280,12 +285,13 @@ background: linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 10
   </div>
   <div class="card big-box">
     <div class="card-body">
-  <table class="table table-sm table-dark">
+  <table class="table table-sm table-dark list-box">
     <thead>
       <tr>
-        <th class="upper-row" scope="col">#</th>
+        <th class="time-row" scope="col">#</th>
         <th class="upper-row" scope="col">Title</th>
         <th class="time-row" scope="col"><ion-icon name="time-outline"></ion-icon></th>
+        <th class="empty-cell"></th>
       </tr>
     </thead>
     <tbody>
@@ -293,19 +299,20 @@ background: linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 10
         <th class="rowss" scope="row">1</th>
         <td>Tell me</td>
         <td>03:43</td>
-        <button type="button" class="btn btn-danger delete">Delete</button>
+        <td  class="empty-cell"><button type="button" class="btn btn-danger delete">Delete</button></td>
       </tr>
       <tr>
         <th class="rowss" scope="row">2</th>
         <td>Prover</td>
         <td>04:01</td>
-        <button type="button" class="btn btn-danger delete">Delete</button>
+        <td  class="empty-cell"><button type="button" class="btn btn-danger delete">Delete</button></td>
       </tr>
       <tr>
         <th class="rowss" scope="row">3</th>
         <td>You & I</td>
         <td>03:46</td>
-        <button type="button" class="btn btn-danger delete">Delete</button>
+        <td class="empty-cell"><button type="button" class="btn btn-danger delete">Delete</button></td>
+
       </tr>
     </tbody>
   </table>
