@@ -95,6 +95,19 @@ width: 100%;
 }
 
 .btn:hover {opacity: 1}
+
+.track-adder{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(246,255,126,1) 0%, rgba(215,255,98,1) 100%);
+  border-color: none;
+  transform: scale(1, 1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.track-adder:hover {
+  box-shadow: 0 5px 15px 2px rgb(0, 0, 0);
+  transform: scale(1.4) ;
+}
     </style>
   </head>
   <body>
@@ -321,10 +334,10 @@ width: 100%;
         <td>You & I</td>
         <td>03:46</td>
         <td class="empty-cell"><button type="button" class="btn btn-danger delete"><ion-icon name="trash-outline"></ion-icon></button></td>
-
       </tr>
     </tbody>
   </table>
+  <button type="button" class="btn btn-warning track-adder">Add Track</button>
 </div>
 </div>
 </body>
