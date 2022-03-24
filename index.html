@@ -63,8 +63,8 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="index.js"></script>
         <style>
-               body {
-            background-color: rgb(87, 87, 87);
+                body {
+            background-color: rgb(83, 83, 83);
         }
            .card {
             background: radial-gradient(circle, rgba(216,216,221,1) 0%, rgba(125,126,131,1) 100%);
@@ -110,6 +110,21 @@
   align-items: center;
   justify-content: center;
             }
+            .top-jumbo {
+              background: -moz-linear-gradient(0deg, rgba(244,254,69,1) 0%, rgba(146,255,221,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(244,254,69,1) 0%, rgba(146,255,221,1) 100%);
+background: linear-gradient(0deg, rgba(244,254,69,1) 0%, rgba(146,255,221,1) 100%);
+animation: fadeIn 4s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+.song-box {
+        background: -moz-linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 100%);
+background: linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 100%);
+      }
           /* EXERCISE 1
                 For every Album displayed in the page we'd like to have a consistent appearence.
                 Create the template of an Album component (you can start from a bootstrap one or create your own)
@@ -153,8 +168,16 @@
                         <a class="nav-link" href="reviews.html">Reviews <span class="sr-only">(current)</span></a>
                       </li>
               </nav>
-
-  
+ <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    -->
+              <div class="jumbotron jumbotron-fluid top-jumbo">
+                <div class="container">
+                  <h1 class="display-4">Welcome to the Website</h1>
+                  <p class="lead">There are some things here i guess.</p>
+                </div>
+              </div>
 
               <blockquote class="blockquote text-center">
                 <p class="mb-0">FAVOURITE ALBUMS</p>
@@ -162,7 +185,7 @@
               <div class="container">
                 <div class="row my-3">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card song-box">
                             <img src="https://cdns-images.dzcdn.net/images/cover/85320a647126529820c2cbdf71ad63e9/264x264.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="title">MILGRAM</h5>
@@ -180,7 +203,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card song-box">
                             <img src="https://m.media-amazon.com/images/I/713RIAh52RS._SS500_.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="title">Please Live Forever</h5>
@@ -198,7 +221,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card song-box">
                             <img src="https://nbcuni-music.com/deco27/lib/img/jkt_syokai.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="title">MANNEQUIN</h5>
@@ -216,7 +239,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card song-box">
                             <img src="https://livejapanmusic.com/wp-content/uploads/2020/02/amz_artistphoto_2020s-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="title">BOYCOTT</h5>
@@ -236,7 +259,7 @@
                     <div class="container">
                         <div class="row my-3">
                             <div class="col-sm-6 col-md-4 col-lg-3">
-                                <div class="card">
+                                <div class="card song-box">
                                     <img src="https://fc.milet.jp/files/4/n114/eyes/img/main.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="title">eyes</h5>
@@ -254,7 +277,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg-3">
-                                <div class="card">
+                                <div class="card song-box">
                                     <img src="https://deadgrandmablog.files.wordpress.com/2020/07/anima-album-cover.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="title">anima</h5>
@@ -272,7 +295,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg-3">
-                                <div class="card">
+                                <div class="card song-box">
                                     <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/8e/06/c7/13043342/1545-1/tsp20201119131129/Kaikai-Kitan-Ao-No-Waltz.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="title">Kaikai Kitan / Ao No Waltz</h5>
@@ -290,7 +313,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg-3">
-                                <div class="card">
+                                <div class="card song-box">
                                     <img src="https://pbs.twimg.com/media/FJnamx6UcAYTSEU.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="title">STRAY SHEEP</h5>
@@ -318,7 +341,7 @@
               <div class="container">
                 <div class="row my-3">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card song-box">
                             <img src="https://fc.milet.jp/files/4/n114/eyes/img/main.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="title">eyes</h5>
@@ -336,7 +359,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card song-box">
                             <img src="https://deadgrandmablog.files.wordpress.com/2020/07/anima-album-cover.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="title">anima</h5>
@@ -354,7 +377,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card song-box">
                             <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/8e/06/c7/13043342/1545-1/tsp20201119131129/Kaikai-Kitan-Ao-No-Waltz.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="title">Kaikai Kitan / Ao No Waltz</h5>
@@ -372,7 +395,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card song-box">
                             <img src="https://pbs.twimg.com/media/FJnamx6UcAYTSEU.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="title">STRAY SHEEP</h5>

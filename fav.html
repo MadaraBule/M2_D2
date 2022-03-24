@@ -32,7 +32,10 @@
 
     <style>
         body {
-            background-color: rgb(87, 87, 87);
+            background-color: rgb(83, 83, 83);
+        }
+        .big-box {
+            background-color: rgb(83, 83, 83);
         }
     .card-img-top {
                 height: 300px;
@@ -51,14 +54,29 @@
       .duration {
         font: 100 italic gray;
       }
-      .card {
-        background: radial-gradient(circle, rgba(216,216,221,1) 0%, rgba(125,126,131,1) 100%);
+      .song-box {
+        background: -moz-linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 100%);
+background: linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 100%);
       }
       
 .play {
   display: flex;
   justify-content: center;
 }
+.genre-badge {
+  position: absolute;
+  width: min-content;
+  padding: 7px;
+}
+.time-row {
+ width: 10px;
+ background: linear-gradient(0deg, rgb(61, 61, 61) 0%, rgb(146, 146, 146) 100%);
+}
+.upper-row {
+  background: linear-gradient(0deg, rgb(61, 61, 61) 0%, rgb(146, 146, 146) 100%);
+}
+
     </style>
   </head>
   <body>
@@ -87,10 +105,20 @@
                 - 3 albums per row when you are on a tablet (or a smaller viewport)
                 - 2 albums per row when you are on a small screen
             -->
+            <!-- EXERCISE 2
+        Use a Bootstrap Card to contain every album in the favorite list you previously created.
+        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc.. they are all already there?
+    -->
+     <!-- EXERCISE 3
+        For every album in the favorite list, attach a badge on the top-left corner of the album with the genre of the music
+    -->
+            <div class="card big-box">
+              <div class="card-body">
             <div class="container">
               <div class="row my-3">
                   <div class="col-sm-6 col-md-4 col-lg-3">
-                      <div class="card">
+                      <div class="card song-box">
+                        <span class="badge badge-warning genre-badge">JP-Pop</span>
                           <img src="https://cdns-images.dzcdn.net/images/cover/85320a647126529820c2cbdf71ad63e9/264x264.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                               <h5 class="title">MILGRAM</h5>
@@ -108,7 +136,8 @@
                       </div>
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-3">
-                      <div class="card">
+                      <div class="card song-box">
+                        <span class="badge badge-warning genre-badge">JP-Pop</span>
                           <img src="https://m.media-amazon.com/images/I/713RIAh52RS._SS500_.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                               <h5 class="title">Please Live Forever</h5>
@@ -126,7 +155,8 @@
                       </div>
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-3">
-                      <div class="card">
+                      <div class="card song-box">
+                        <span class="badge badge-warning genre-badge">JP-Pop</span>
                           <img src="https://nbcuni-music.com/deco27/lib/img/jkt_syokai.png" class="card-img-top" alt="...">
                           <div class="card-body">
                               <h5 class="title">MANNEQUIN</h5>
@@ -144,7 +174,8 @@
                       </div>
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-3">
-                      <div class="card">
+                      <div class="card song-box">
+                        <span class="badge badge-warning genre-badge">JP-Pop</span>
                           <img src="https://livejapanmusic.com/wp-content/uploads/2020/02/amz_artistphoto_2020s-1.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                               <h5 class="title">BOYCOTT</h5>
@@ -164,7 +195,8 @@
                   <div class="container">
                       <div class="row my-3">
                           <div class="col-sm-6 col-md-4 col-lg-3">
-                              <div class="card">
+                              <div class="card song-box">
+                                <span class="badge badge-warning genre-badge">JP-Pop</span>
                                   <img src="https://fc.milet.jp/files/4/n114/eyes/img/main.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
                                       <h5 class="title">eyes</h5>
@@ -182,7 +214,8 @@
                               </div>
                           </div>
                           <div class="col-sm-6 col-md-4 col-lg-3">
-                              <div class="card">
+                              <div class="card song-box">
+                                <span class="badge badge-warning genre-badge">JP-Pop</span>
                                   <img src="https://deadgrandmablog.files.wordpress.com/2020/07/anima-album-cover.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
                                       <h5 class="title">anima</h5>
@@ -200,7 +233,8 @@
                               </div>
                           </div>
                           <div class="col-sm-6 col-md-4 col-lg-3">
-                              <div class="card">
+                              <div class="card song-box">
+                                <span class="badge badge-warning genre-badge">JP-Pop</span>
                                   <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/8e/06/c7/13043342/1545-1/tsp20201119131129/Kaikai-Kitan-Ao-No-Waltz.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
                                       <h5 class="title">Kaikai Kitan / Ao No Waltz</h5>
@@ -218,8 +252,9 @@
                               </div>
                           </div>
                           <div class="col-sm-6 col-md-4 col-lg-3">
-                              <div class="card">
-                                  <img src="https://res.cloudinary.com/dq82ikfq4/image/upload/c_crop,h_600,w_600,x_0,y_0/c_pad,dpr_2,f_auto,h_300,w_400/muzryzzcjpziyqbpj2il.jpg" class="card-img-top" alt="...">
+                              <div class="card song-box">
+                                <span class="badge badge-warning genre-badge">JP-Pop</span>
+                                  <img src="https://fc.milet.jp/files/4/n114/eyes/img/main.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
                                       <h5 class="title">STRAY SHEEP</h5>
                                       <p class="artist">Kenshi Yonezu</p>
@@ -235,6 +270,35 @@
                                   </div>
                               </div>
                           </div>
+                        </div>
+                      </div>
+                          
   </div>
+  <table class="table table-sm table-dark">
+    <thead>
+      <tr>
+        <th class="upper-row" scope="col">#</th>
+        <th class="upper-row" scope="col">Title</th>
+        <th class="time-row" scope="col"><ion-icon name="time-outline"></ion-icon></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="rowss" scope="row">1</th>
+        <td>Tell me</td>
+        <td>03:43</td>
+      </tr>
+      <tr>
+        <th class="rowss" scope="row">2</th>
+        <td>Prover</td>
+        <td>04:01</td>
+      </tr>
+      <tr>
+        <th class="rowss" scope="row">3</th>
+        <td>You & I</td>
+        <td>03:46</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
