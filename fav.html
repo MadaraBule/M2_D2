@@ -73,19 +73,28 @@ background: linear-gradient(0deg, rgba(250,255,160,1) 0%, rgba(182,255,232,1) 10
 width: 100%;
 }
 .time-row {
- width: 15%;
- background: linear-gradient(0deg, rgb(61, 61, 61) 0%, rgb(146, 146, 146) 100%);
+ width: 5%;
 }
 .upper-row {
-  width: 70%;
-  background: linear-gradient(0deg, rgb(61, 61, 61) 0%, rgb(146, 146, 146) 100%);
+  width: 90%;
 }
 .empty-cell {
   padding: 0px;
 }
 .delete {
-  object-fit: fill;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  color: white;
+  padding-left: 10px 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.4;
+  transition: 0.3s;
 }
+
+.btn:hover {opacity: 1}
     </style>
   </head>
   <body>
@@ -291,7 +300,7 @@ width: 100%;
         <th class="time-row" scope="col">#</th>
         <th class="upper-row" scope="col">Title</th>
         <th class="time-row" scope="col"><ion-icon name="time-outline"></ion-icon></th>
-        <th class="empty-cell"></th>
+        <th class="empty-cell">...</th>
       </tr>
     </thead>
     <tbody>
@@ -299,19 +308,19 @@ width: 100%;
         <th class="rowss" scope="row">1</th>
         <td>Tell me</td>
         <td>03:43</td>
-        <td  class="empty-cell"><button type="button" class="btn btn-danger delete">Delete</button></td>
+        <td  class="empty-cell"><button type="button" class="btn btn-danger delete"><ion-icon name="trash-outline"></ion-icon></button></td>
       </tr>
       <tr>
         <th class="rowss" scope="row">2</th>
         <td>Prover</td>
         <td>04:01</td>
-        <td  class="empty-cell"><button type="button" class="btn btn-danger delete">Delete</button></td>
+        <td  class="empty-cell"><button type="button" class="btn btn-danger delete"><ion-icon name="trash-outline"></ion-icon></button></td>
       </tr>
       <tr>
         <th class="rowss" scope="row">3</th>
         <td>You & I</td>
         <td>03:46</td>
-        <td class="empty-cell"><button type="button" class="btn btn-danger delete">Delete</button></td>
+        <td class="empty-cell"><button type="button" class="btn btn-danger delete"><ion-icon name="trash-outline"></ion-icon></button></td>
 
       </tr>
     </tbody>
